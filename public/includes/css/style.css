@@ -1,0 +1,48 @@
+* { margin:0; padding:0 }
+a { text-decoration: none; color: #ffffff; }
+
+header, nav, main, aside, footer, section, article {
+	display:block;
+}
+
+body {
+	background-color: #c3d4e3;
+	color: #ffffff;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+aside {
+	width: 100px;
+	transition: 1s;
+	position: absolute;
+	left: -10px;
+	top: 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 3px solid rgba(0, 0, 100, 0.5);
+	border-radius: 10px;
+	padding: 5px;
+}
+aside button {
+	width: 90%;
+	display: block;
+	float: right;
+}
+.hidden {
+	left: -120px;
+}
+
+.clear {
+	clear: both;
+}
+
+#mouseArea {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}

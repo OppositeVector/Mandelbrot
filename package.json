@@ -1,0 +1,15 @@
+{
+  "name": "mandlebrot",
+  "version": "0.0.1",
+  "description": "For cloud computing course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vic and Niv",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-png": "^0.4.3"
+  }
+}
