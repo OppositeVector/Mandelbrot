@@ -5,16 +5,21 @@ header, nav, main, aside, footer, section, article {
 	display:block;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	background-color: #c3d4e3;
 	color: #ffffff;
-}
-
-#wrapper {
-	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
+
+#wrapper {
+	overflow: hidden;
+}
+
 aside {
 	width: 100px;
 	transition: 1s;
@@ -25,7 +30,9 @@ aside {
 	border: 3px solid rgba(0, 0, 100, 0.5);
 	border-radius: 10px;
 	padding: 5px;
+	z-index: 9999;
 }
+
 aside button {
 	width: 90%;
 	display: block;

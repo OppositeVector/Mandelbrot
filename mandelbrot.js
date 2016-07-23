@@ -7,7 +7,7 @@
 // http://localhost:8080/-1/1/-1/1/1000
 var PNG = require('node-png').PNG;
 
-exports.GetMandlebrotPicture =  function make_mandel(w, h, iters, sx, ex, sy, ey) {
+exports.GetMandelbrotPicture =  function make_mandel(w, h, iters, sx, ex, sy, ey) {
 	var p = new PNG({
 		filterType: -1,
 		width: w,

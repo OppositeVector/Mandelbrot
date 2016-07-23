@@ -5,18 +5,20 @@
 		<link rel = "stylesheet" href = "includes/css/style.css">
 		<script type="text/javascript" src="includes/js/lib/jquery/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="includes/js/lib/angular/angular.min.js"></script>
-		<script type="text/javascript" src="includes/js/visualizer.js"></script>
+		
 	</head>
 
 	<body ng-controller="mainController" ng-mousemove="MouseMove()">
-		<aside class="hidden">
-			<button>L</button>
-			<button>R</button>
+		<aside class="hidden" ng-mouseenter="MouseEnter()" ng-mouseleave="MouseLeave()">
+			<button ng-click="ZoomIn()">Zoom In</button>
+			<button ng-click="ZoomOut()">Zoom Out</button>
 		</aside>
 		<div id="mouseArea" ng-mouseenter="MouseEnter()" ng-mouseleave="MouseLeave()">
 		</div>
 		<div id="wrapper">
-			<img data-ng-src="data:image/png;base64,{{data}}" data-err-src="images/png/avatar.png"/>
+			<canvas></canvas>
+			<!--<img data-ng-src="data:image/png;base64,{{data}}" data-err-src="images/png/avatar.png"/>-->
 		</div>
+		<script type="text/javascript" src="includes/js/visualizer.js"></script>
 	</body>
 </html>
