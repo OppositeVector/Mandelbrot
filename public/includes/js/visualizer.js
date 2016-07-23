@@ -211,7 +211,7 @@ function ImageController(ctx) {
 					circle.degs -= 360;
 					circle.c = !circle.c;
 				}
-				console.log(circle);
+				// console.log(circle);
 				ctx.beginPath();
 				ctx.arc(circle.x + offset.x, circle.y + offset.y, circle.r, 0, circle.degs * (Math.PI / 180), circle.c);
 				ctx.stroke();
