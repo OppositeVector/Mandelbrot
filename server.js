@@ -12,7 +12,11 @@ app.get('/GetFragment', function(req, res) {
 	var body = url.parse(req.url, true).query;
 	// console.log(body);
 	var iters = parseFloat(body.iterations);
-	var reso = { x: 200, y: 200 }
+	var reso = { x: 200, y: 200 };
+	if((body.resx != null) && (body.resy != null)) {
+		reso.x = parseFloat(body.resx);
+		reso.y = parseFloat(body.resy);
+	}
 	var pos = { 
 		x: parseFloat(body.xPos), 
 		y: parseFloat(body.yPos) 

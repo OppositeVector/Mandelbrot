@@ -102,8 +102,8 @@ function ImageController(ctx) {
 	var blockSize = 200;
 	var minY = 0;
 	var maxY = 0;
-	var offset = { x: 0, y: 0 };
-	var zoom = 1;
+	var offset = { x: 70000, y: 500 };
+	var zoom = 20;
 	var arr = [];
 	var self = this;
 	this.count = 0;
